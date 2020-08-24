@@ -24,6 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://ab3MN.github.io/movies",
   "eslintConfig": {
     "extends": "react-app"
   },
