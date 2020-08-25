@@ -8,7 +8,7 @@ const App = () => (
   <>
     <Nav />
 
-    <Suspense fallback={MovieLoader}>
+    <Suspense fallback={<MovieLoader />}>
       <Switch>
         <Route
           path={routes.HOME_PAGE.path}

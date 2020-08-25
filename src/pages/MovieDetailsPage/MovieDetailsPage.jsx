@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import T from 'prop-types';
 
 import * as API from '../../services/moviesAPI';
@@ -77,16 +77,18 @@ export default class MovieDetailsPage extends Component {
           <hr />
         </ul>
 
-        <Suspense fallback={MovieLoader}>
-          <Route
-            path={`${path + routes.CAST_PAGE.path}`}
-            component={routes.CAST_PAGE.component}
-          />
+        <Suspense fallback={<MovieLoader />}>
+          <Switch>
+            <Route
+              path={`${path + routes.CAST_PAGE.path}`}
+              component={routes.CAST_PAGE.component}
+            />
 
-          <Route
-            path={`${path + routes.REVIEWS_PAGE.path}`}
-            component={routes.REVIEWS_PAGE.component}
-          />
+            <Route
+              path={`${path + routes.REVIEWS_PAGE.path}`}
+              component={routes.REVIEWS_PAGE.component}
+            />
+          </Switch>
         </Suspense>
       </div>
     );
