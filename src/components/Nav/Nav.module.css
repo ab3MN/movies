@@ -1,0 +1,28 @@
+.navList {
+  display: flex;
+  width: 180px;
+  justify-content: space-around;
+  padding-inline-start: 20px;
+}
+
+.navItem {
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navLink {
+  color: #808080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hr {
+  background-color: #808080;
+  height: 2px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}

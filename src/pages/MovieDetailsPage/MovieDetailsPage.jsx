@@ -21,7 +21,7 @@ export default class MovieDetailsPage extends Component {
       path: T.string.isRequired,
     }).isRequired,
     location: T.shape({
-      key: T.string.isRequired,
+      key: T.string,
     }).isRequired,
   };
 

@@ -5,7 +5,7 @@ const ReviewList = ({ items }) => (
   <ul>
     {items.map(({ id, author, content }) => (
       <li key={id}>
-        <h3>{author}</h3>
+        <h3>Author: {author}</h3>
         <p>{content}</p>
       </li>
     ))}

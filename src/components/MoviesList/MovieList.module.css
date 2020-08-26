@@ -1,0 +1,8 @@
+.movieList {
+  padding-left: 20px;
+}
+
+.movieItem {
+  list-style: none;
+  font-weight: bold;
+}
