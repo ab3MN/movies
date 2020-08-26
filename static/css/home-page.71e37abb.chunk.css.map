@@ -1,0 +1,1 @@
+{"version":3,"sources":["MovieList.module.css"],"names":[],"mappings":"AAAA,4BACE,iBACF,CAEA,4BACE,eAAgB,CAChB,eACF","file":"home-page.71e37abb.chunk.css","sourcesContent":[".movieList {\r\n  padding-left: 20px;\r\n}\r\n\r\n.movieItem {\r\n  list-style: none;\r\n  font-weight: bold;\r\n}\r\n"]}
